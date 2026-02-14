@@ -5,5 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div id="weatherApp">
+      <div class="header">
+        <h1 class="mesto">Prague</h1>
+        <h1 class="temp">0 ˚C</h1>
+      </div>
+      <div class="content">
+        <div>
+          <p class="podminky">Zataženo</p>
+        </div>
+        <div class="vlhkost">
+          <p>Vlhkost:</p>
+          <p>50</p>
+        </div>
+        <div class="vitr">
+          <p>Vítr:</p>
+          <p>la</p>
+        </div>
+        <div class="vychod">
+          <p>Východ slunce:</p>
+          <p>20</p>
+        </div>
+        <div class="zapad">
+          <p>Západ slunce:</p>
+          <p>20</p>
+        </div>
+      </div>
+      <img src="./assets/cloudy.png" alt="cloud" />
+    </div>
+    <form action="#">
+      <label for="mesto">Město:</label>
+      <input type="text" placeholder="Prague" name="mesto" id="mesto" />
+      <button type="submit">Předpověď pro město</button>
+    </form>
+  </body>
+  <div class="loader"></div>
 </html>

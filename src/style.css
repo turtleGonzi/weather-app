@@ -1,0 +1,74 @@
+body {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#weatherApp {
+  width: 25rem;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  border: 0.3rem solid black;
+  padding: 0 13px 13px 13px;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.content {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+img {
+  grid-area: 2 / 2 / 3 / 3;
+  width: 50%;
+  margin: auto;
+}
+
+.podminky {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.content div {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.content div p:nth-child(2) {
+  font-weight: bold;
+  margin-left: 0.3rem;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
